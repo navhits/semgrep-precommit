@@ -1,0 +1,6 @@
+- id: semgrep
+  name: Semgrep Scan
+  description: Pre-commit hook for Semgrep with diff awareness.
+  entry: semgrep-precommit
+  language: python
+  args: ["--disable-version-check", "--quiet", "--skip-unknown-extensions"]
