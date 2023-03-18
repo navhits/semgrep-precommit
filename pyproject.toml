@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "semgrep-precommit"
+version = "0.1.0"
+description = "Pre-commit hook for Semgrep with diff awareness"
+authors = ["Naveen S <dev@navs.page>"]
+readme = "README.md"
+packages = [{include = "semgrep_precommit"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+semgrep = "*"
+
+[tool.poetry.scripts]
+semgrep-precommit = "semgrep_precommit.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
