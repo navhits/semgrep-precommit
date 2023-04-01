@@ -25,15 +25,22 @@ def main() -> None:
     for argument in list(arguments):
         if is_file(argument):
             arguments.remove(argument)
-
+    temp_dir = make_tmp_dir()
+    is_copied = copy_to_tmp(dest=temp_dir, src="/src")
+    if not is_copied:
+        print("Failed to copy files to temporary directory")
+        sys.exit(1)
+    else:
+        add_safe_git_dir(temp_dir.name)
     current_commit, commit_before_current = None, None
-    is_commit = commit_staged_files()
+    is_commit = commit_staged_files(temp_dir.name)
     if is_commit:
-        current_commit, commit_before_current = get_last_two_commit_ids()
+        current_commit, commit_before_current = get_last_two_commit_ids(temp_dir.name)
         os.environ["SEMGREP_BASELINE_REF"] = commit_before_current
     exit_code = run_semgrep(arguments)
     if is_commit:
-        soft_reset_to_commit(commit_before_current)
+        soft_reset_to_commit(temp_dir.name, commit_before_current)
+    temp_dir.cleanup()
     sys.exit(exit_code)
 
 if __name__ == "__main__":
