@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "semgrep-precommit"
-version = "0.1.0"
+version = "0.2.0"
 description = "Pre-commit hook for Semgrep with diff awareness"
 authors = ["Naveen S <dev@navs.page>"]
 readme = "README.md"

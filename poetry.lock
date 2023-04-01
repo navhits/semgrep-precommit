@@ -420,14 +420,14 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "rich"
-version = "13.3.2"
+version = "13.3.3"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
 category = "main"
 optional = false
 python-versions = ">=3.7.0"
 files = [
-    {file = "rich-13.3.2-py3-none-any.whl", hash = "sha256:a104f37270bf677148d8acb07d33be1569eeee87e2d1beb286a4e9113caf6f2f"},
-    {file = "rich-13.3.2.tar.gz", hash = "sha256:91954fe80cfb7985727a467ca98a7618e5dd15178cc2da10f553b36a93859001"},
+    {file = "rich-13.3.3-py3-none-any.whl", hash = "sha256:540c7d6d26a1178e8e8b37e9ba44573a3cd1464ff6348b99ee7061b95d1c6333"},
+    {file = "rich-13.3.3.tar.gz", hash = "sha256:dc84400a9d842b3a9c5ff74addd8eb798d155f36c1c91303888e0a66850d2a15"},
 ]
 
 [package.dependencies]
@@ -504,16 +504,16 @@ files = [
 
 [[package]]
 name = "semgrep"
-version = "1.15.0"
+version = "1.16.0"
 description = "Lightweight static analysis for many languages. Find bug variants with patterns that look like source code."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "semgrep-1.15.0-cp37.cp38.cp39.py37.py38.py39-none-any.whl", hash = "sha256:b55392f912ee9fb6fb803086c251d9c37fdfd54ab9be14e0447d89ff2da79411"},
-    {file = "semgrep-1.15.0-cp37.cp38.cp39.py37.py38.py39-none-macosx_10_14_x86_64.whl", hash = "sha256:77377efda82eb03632e5b6ce470cae5e871608a81d5e7317531087fae111d304"},
-    {file = "semgrep-1.15.0-cp37.cp38.cp39.py37.py38.py39-none-macosx_11_0_arm64.whl", hash = "sha256:d4a4182f801c131ab835b3cf4659ac1619f361ce22ab3ca46acd72ba04f68181"},
-    {file = "semgrep-1.15.0.tar.gz", hash = "sha256:ba638c65b0fea50259501e6b56faccf5d88d625c7e0c0c47f881bcb772bb2c44"},
+    {file = "semgrep-1.16.0-cp37.cp38.cp39.py37.py38.py39-none-any.whl", hash = "sha256:83fafcea96100ab1051c153ae0b144dc9a73f5f1cc2cc8bd11d486b4e9688271"},
+    {file = "semgrep-1.16.0-cp37.cp38.cp39.py37.py38.py39-none-macosx_10_14_x86_64.whl", hash = "sha256:7b1f0a037849fda5d80c06ab36bf6b5c427d975b211d10c4c7c7fe1a7927d597"},
+    {file = "semgrep-1.16.0-cp37.cp38.cp39.py37.py38.py39-none-macosx_11_0_arm64.whl", hash = "sha256:397f1ede96a66532922525663efba27be9f63ff0370182865ff7df1ab9edac9e"},
+    {file = "semgrep-1.16.0.tar.gz", hash = "sha256:a480a880cee2953e68ae828726399d1aaabffe3489219e30af609ccc72e8ed2d"},
 ]
 
 [package.dependencies]
