@@ -22,7 +22,7 @@ I'm hoping that one day this will be a feature in Semgrep itself. Until then fee
     ```yaml
     repos:
     - repo: https://github.com/navhits/semgrep-precommit
-    rev: 'v0.1.0'
+    rev: 'v0.2.0'
     hooks:
         - id: semgrep
         # See semgrep.dev/rulesets to select a ruleset and copy its URL
