@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD022 -->
 # Semgrep Pre-commit Hook with diff awareness 😉
 
+**Note: The folks at r2c Semgrep added support for scanning staged files in version 1.28.0. More details in https://github.com/returntocorp/semgrep/pull/7973. This is supported with pre-commit hooks too. Please migrate to the official version as this repository will be archived and no further development will be done.**
+
 This is a pre-commit hook for [Semgrep](https://semgrep.dev) with diff-awareness. It will only run the changes made to the staged files. Yes, that's it.
 
 ## Why I wrote this?
